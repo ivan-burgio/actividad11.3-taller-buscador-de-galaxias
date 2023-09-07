@@ -82,7 +82,7 @@ function display2() {
              <div class="card-body" style="overflow:auto;max-height:280px">
              <h5 class= "card-title" style=""> "${item.data[0].title}"
              <p class="card-text text-body-secondary"> ${item.data[0].description} </p>
-             <p class="card-text text-body-secondary> ${item.data[0].date_created} </p>
+             <p class="card-text text-body-secondary"> ${item.data[0].date_created} </p>
                </div>
                </div>
        </div>
