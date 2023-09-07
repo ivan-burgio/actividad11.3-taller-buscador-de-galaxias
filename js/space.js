@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 searchButton.addEventListener('click', search);
 
+
 function search() {
+    resultsContainer.innerHTML = ""
     planeta = searchForm.value;
     consultaAPI();
 }
@@ -75,11 +77,12 @@ function display2() {
        debugger;
         consultahtml = `
         <div class= "col-4">
-        <div class="card h-100" >
+        <div class="card" >
                <img src="${item.links[0].href}" style="width:100%;height:150px" class= "card-img-top alt="...">
              <div class="card-body" style="overflow:auto;max-height:280px">
              <h5 class= "card-title" style=""> "${item.data[0].title}"
              <p class="card-text text-body-secondary"> ${item.data[0].description} </p>
+             <p class="card-text text-body-secondary> ${item.data[0].date_created} </p>
                </div>
                </div>
        </div>
